@@ -5,28 +5,28 @@
 class GoCliExampleEdge < Formula
   desc "go-cli-example"
   homepage "https://github.com/sika-training-examples/go-cli-example"
-  version "0.1.5"
+  version "0.1.6"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sika-training-examples/go-cli-example/releases/download/v0.1.5/go-cli-example_v0.1.5_darwin_amd64.tar.gz"
-      sha256 "6d275b10ff4c126a92614eced9ce51c835d92c66bc5a8bc8835362814cf866a4"
+      url "https://github.com/sika-training-examples/go-cli-example/releases/download/v0.1.6/go-cli-example_v0.1.6_darwin_amd64.tar.gz"
+      sha256 "bd6857edeb2e344099e0850f22833a49f11e2aa816188d9a9a852b505b6d51b7"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sika-training-examples/go-cli-example/releases/download/v0.1.5/go-cli-example_v0.1.5_darwin_arm64.tar.gz"
-      sha256 "de88d6c89dbb1d7b1517fd60d3f6196fe084f663a71b0cfaccd681a163b39f1d"
+      url "https://github.com/sika-training-examples/go-cli-example/releases/download/v0.1.6/go-cli-example_v0.1.6_darwin_arm64.tar.gz"
+      sha256 "6332c5a1df0f5835cfd190f18810ab05479d484ddefabe6be8284f1a2d7e722d"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/sika-training-examples/go-cli-example/releases/download/v0.1.5/go-cli-example_v0.1.5_linux_amd64.tar.gz"
-      sha256 "367cb9e4c9e0f03c17e6929f9ebf4a0b27a300dd9faaa34276e9b74be751f931"
+      url "https://github.com/sika-training-examples/go-cli-example/releases/download/v0.1.6/go-cli-example_v0.1.6_linux_amd64.tar.gz"
+      sha256 "f72f32702705dce8a41542fd4f5c9302707e8fbb9d3f26fc8983f80e8341e27a"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sika-training-examples/go-cli-example/releases/download/v0.1.5/go-cli-example_v0.1.5_linux_arm64.tar.gz"
-      sha256 "7cbdc247c2c3f465097a136663ba5d9faa87da606e11ea17fb4d400addfa5153"
+      url "https://github.com/sika-training-examples/go-cli-example/releases/download/v0.1.6/go-cli-example_v0.1.6_linux_arm64.tar.gz"
+      sha256 "f8445aa5de48514af8ea8e057395c17aa785b45843e499e1f39a9a9e1b536a71"
     end
   end
 
